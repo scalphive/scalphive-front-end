@@ -215,7 +215,7 @@
 .toggle {
 	padding: 18px 30px;
 	margin-bottom: 0;
-	background-color: rgba(255,255,255,0.1);
+	background-color: #fee79e;
 	border-bottom: 1px solid rgba(255,255,255,0.15);
 	transition: background-color .2s ease;
 }
@@ -239,7 +239,7 @@
 	color: #F5F5F5;
 }
 
-.toggle:hover { background-color: rgba(255,255,255,0.15); }
+.toggle:hover { background-color: #fdda6e; }
 
 .device-video-wrap { position: relative; }
 
