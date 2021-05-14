@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
+
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="ScalpHive" />
-	<meta name="description" content="Fully automated trading bot. Orders are triggered on uptrend momentum with long only entries and fade-in entry for scalping the best volatility moments.">
-	<meta name="keywords" content="crypto, eth, scalpbot, scalper, scalp, bot, auto, trading, invest, ethereum, binance, bybit">
+	<meta name="description"
+		content="Fully automated trading bot. Orders are triggered on uptrend momentum with long only entries and fade-in entry for scalping the best volatility moments.">
+	<meta name="keywords"
+		content="crypto, eth, scalpbot, scalper, scalp, bot, auto, trading, invest, ethereum, binance, bybit">
 	<!-- Stylesheets
 	============================================= -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,900&display=swap" rel="stylesheet" type="text/css" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,900&display=swap"
+		rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css?v2" type="text/css" />
 
@@ -27,6 +32,24 @@
 
 	<link rel="icon" href="favicon.png" type="image/x-icon">
 
+	<script>
+		window.Promise ||
+			document.write(
+				'<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+			)
+		window.Promise ||
+			document.write(
+				'<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+			)
+		window.Promise ||
+			document.write(
+				'<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+			)
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.8.17/dayjs.min.js"></script>
+
 	<!-- Document Title
 	============================================= -->
 	<title>ScalpHive - Your best crypto trading bot</title>
@@ -34,11 +57,11 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-B5KG529L9T"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	gtag('config', 'G-B5KG529L9T');
+		gtag('config', 'G-B5KG529L9T');
 	</script>
 </head>
 
@@ -58,12 +81,22 @@
 						<!-- Logo
 						============================================= -->
 						<div id="logo" class="border-right-0">
-							<a href="/" class="standard-logo" data-dark-logo="images/scalphive-logo.png"><img src="images/scalphive-logo.png" alt="ScalpHive Logo"></a>
-							<a href="/" class="retina-logo" data-dark-logo="images/scalphive-logo.png"><img src="images/scalphive-logo.png" alt="ScalpHive Logo"></a>
+							<a href="/" class="standard-logo" data-dark-logo="images/scalphive-logo.png"><img
+									src="images/scalphive-logo.png" alt="ScalpHive Logo"></a>
+							<a href="/" class="retina-logo" data-dark-logo="images/scalphive-logo.png"><img
+									src="images/scalphive-logo.png" alt="ScalpHive Logo"></a>
 						</div><!-- #logo end -->
 
 						<div id="primary-menu-trigger">
-							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+							<svg class="svg-trigger" viewBox="0 0 100 100">
+								<path
+									d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
+								</path>
+								<path d="m 30,50 h 40"></path>
+								<path
+									d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
+								</path>
+							</svg>
 						</div>
 
 						<!-- Primary Navigation
@@ -71,10 +104,21 @@
 						<nav class="primary-menu not-dark with-arrows">
 
 							<ul class="mr-0 border-0 menu-container">
-								<li class="menu-item"><a class="menu-link" href="/"><div>Home</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#about" data-scrollto="about" data-offset="100" data-easing="easeInOutExpo" data-speed="1250"><div>About</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#referral" data-scrollto="referral" data-offset="100" data-easing="easeInOutExpo" data-speed="1250"><div>Referral Bonus</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#faq" data-scrollto="faq" data-offset="100" data-easing="easeInOutExpo" data-speed="1250"><div>FAQ</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="/">
+										<div>Home</div>
+									</a></li>
+								<li class="menu-item"><a class="menu-link" href="#about" data-scrollto="about"
+										data-offset="100" data-easing="easeInOutExpo" data-speed="1250">
+										<div>About</div>
+									</a></li>
+								<li class="menu-item"><a class="menu-link" href="#referral" data-scrollto="referral"
+										data-offset="100" data-easing="easeInOutExpo" data-speed="1250">
+										<div>Referral Bonus</div>
+									</a></li>
+								<li class="menu-item"><a class="menu-link" href="#faq" data-scrollto="faq"
+										data-offset="100" data-easing="easeInOutExpo" data-speed="1250">
+										<div>FAQ</div>
+									</a></li>
 							</ul>
 
 						</nav><!-- #primary-menu end -->
@@ -87,7 +131,8 @@
 
 		<!-- Slider
 		============================================= -->
-		<section id="slider" class="slider-element dark min-vh-100 include-header" style="background-image: url('images/background.png');">
+		<section id="slider" class="slider-element dark min-vh-100 include-header"
+			style="background-image: url('images/background.png');">
 			<div class="slider-inner flex-column">
 
 				<div class="vertical-middle">
@@ -96,12 +141,19 @@
 
 							<div class="col-lg-6 col-md-6">
 								<h2 class="display-3 font-weight-bold text-white">Welcome To<br>ScalpHive</h2>
-								<p class="lead mb-4 font-weight-normal">Fully automated trading bot. Orders are triggered on uptrend momentum with long only entries and fade-in entry for scalping the best volatility moments.</p>
+								<p class="lead mb-4 font-weight-normal">Fully automated trading bot. Orders are
+									triggered on uptrend momentum with long only entries and fade-in entry for scalping
+									the best volatility moments.</p>
 								<div>
-									<a href="https://t.me/scalphive" target="_blank" class="btn mt-2 text-dark bg-white rounded-lg px-4 py-3 nott ls0 shadow-sm"><i class="icon-telegram mr-2"></i>Join our Telegram</a>
-									<a href="mailto:scalphive@gmail.com?subject=Enquiry about ScalpHive!" class="ml-0 ml-lg-2 mt-2 btn text-dark bg-white rounded-lg px-4 py-3 nott ls0 shadow-sm"><i class="icon-email mr-2"></i>Send us an Email</a>
+									<a href="https://t.me/scalphive" target="_blank"
+										class="btn mt-2 text-dark bg-white rounded-lg px-4 py-3 nott ls0 shadow-sm"><i
+											class="icon-telegram mr-2"></i>Join our Telegram</a>
+									<a href="mailto:scalphive@gmail.com?subject=Enquiry about ScalpHive!"
+										class="ml-0 ml-lg-2 mt-2 btn text-dark bg-white rounded-lg px-4 py-3 nott ls0 shadow-sm"><i
+											class="icon-email mr-2"></i>Send us an Email</a>
 								</div>
-								<p class="text-white-50 text-uppercase mt-2 ls1 font-weight-medium"><small>Don't be shy! Come talk to us :)</small></p>
+								<p class="text-white-50 text-uppercase mt-2 ls1 font-weight-medium"><small>Don't be shy!
+										Come talk to us :)</small></p>
 							</div>
 
 							<div class="col-lg-1 d-md-none d-lg-block"></div>
@@ -121,9 +173,15 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-8 col-md-7 d-flex align-items-lg-center flex-row">
-								<div class="col"><img src="images/exchange-logo/bybit.png?8cf6021a-06bd-4c9e-bff2-6d37ae944293" alt="Bybit"></div>
-								<div class="col"><img src="images/exchange-logo/binance.png?0efc8c12-1fc2-47e7-8520-845c5fc1bf68" alt="Binance"></div>
-								<div class="col"><img src="images/exchange-logo/bitmex.png?df04ee5b-88c1-4f35-ac41-036259d893ca" alt="BitMex"></div>
+								<div class="col"><img
+										src="images/exchange-logo/bybit.png?8cf6021a-06bd-4c9e-bff2-6d37ae944293"
+										alt="Bybit"></div>
+								<div class="col"><img
+										src="images/exchange-logo/binance.png?0efc8c12-1fc2-47e7-8520-845c5fc1bf68"
+										alt="Binance"></div>
+								<div class="col"><img
+										src="images/exchange-logo/bitmex.png?df04ee5b-88c1-4f35-ac41-036259d893ca"
+										alt="BitMex"></div>
 							</div>
 						</div>
 					</div>
@@ -141,7 +199,9 @@
 					<div class="mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
 						<h5 class="text-uppercase ls1 text-muted mb-3">Why Choose Us?</h5>
 						<h2 class="nott mb-4">Hands-free Crypto Trading </h2>
-						<p class="lead font-weight-normal font-primary mb-5">ScalpHive executes a historically proven, short-term trading strategy that makes smaller profits with lower risk. Accumulate steady profit margins over the course of several trades of ScalpHive bot trading session.</p>
+						<p class="lead font-weight-normal font-primary mb-5">ScalpHive executes a historically proven,
+							short-term trading strategy that makes smaller profits with lower risk. Accumulate steady
+							profit margins over the course of several trades of ScalpHive bot trading session.</p>
 					</div>
 
 					<div class="features-items mx-auto" style="max-width: 1000px;">
@@ -153,7 +213,9 @@
 									</div>
 									<div class="fbox-content">
 										<h2 class="h4 font-weight-bold mb-4">Long only strategies</h2>
-										<div class="lead font-weight-normal text-black-50">Fully automated trading bot. Orders are triggered on uptrend momentum with long only entries and fade-in entry for scalping the best volatility moments.</div>
+										<div class="lead font-weight-normal text-black-50">Fully automated trading bot.
+											Orders are triggered on uptrend momentum with long only entries and fade-in
+											entry for scalping the best volatility moments.</div>
 									</div>
 								</div>
 							</div>
@@ -165,7 +227,9 @@
 									</div>
 									<div class="fbox-content">
 										<h2 class="h4 font-weight-bold mb-4">Risk management</h2>
-										<div class="lead font-weight-normal text-black-50">State of the art risk management to instantaneously cut position in the event of a market downturn.</div>
+										<div class="lead font-weight-normal text-black-50">State of the art risk
+											management to instantaneously cut position in the event of a market
+											downturn.</div>
 									</div>
 								</div>
 							</div>
@@ -178,7 +242,9 @@
 									</div>
 									<div class="fbox-content">
 										<h2 class="h4 font-weight-bold mb-4">You own your account</h2>
-										<div class="lead font-weight-normal text-black-50">We do not require any account or withdrawal access from you! You have full custody of your own money, settlements are requested manually. We only require trade API access.</div>
+										<div class="lead font-weight-normal text-black-50">We do not require any account
+											or withdrawal access from you! You have full custody of your own money,
+											settlements are requested manually. We only require trade API access.</div>
 									</div>
 								</div>
 							</div>
@@ -190,9 +256,17 @@
 									</div>
 									<div class="fbox-content">
 										<h2 class="h4 font-weight-bold mb-4">Zero upfront fees</h2>
-										<div class="lead font-weight-normal text-black-50">There's no upfront fees to join the bot! We run a profit sharing model where we'll only charge you on your bot profit after a month!</div>
+										<div class="lead font-weight-normal text-black-50">There's no upfront fees to
+											join the bot! We run a profit sharing model where we'll only charge you on
+											your bot profit after a month!</div>
 									</div>
 								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-around">
+							<div class="col-md-12">
+								<div id="chart"></div>
 							</div>
 						</div>
 					</div>
@@ -201,22 +275,30 @@
 
 				<div class="row align-items-stretch align-content-stretch no-gutters topmargin">
 
-					<div class="col-md-6 order-md-2" style="background: url('images/invest-story.svg') center center / cover; min-height: 300px"></div>
+					<div class="col-md-6 order-md-2"
+						style="background: url('images/invest-story.svg') center center / cover; min-height: 300px">
+					</div>
 
 					<div class="col-md-6 dark order-md-1" style="background-color: black !important;">
 						<div class="section-features">
 							<h2 class="mb-3 h4 font-weight-semibold">Steady ROI</h2>
-							<p class="h6 font-weight-normal mb-5">ScalpHive generates a monthly ROI of about 5~8%+ based on historically result. However, depends on market conditions, sometimes ScalpHive might generates lower/higher ROI.</p>
+							<p class="h6 font-weight-normal mb-5">ScalpHive generates a monthly ROI of about 5~8%+ based
+								on historically result. However, depends on market conditions, sometimes ScalpHive might
+								generates lower/higher ROI.</p>
 
 							<h2 class="mb-3 h4 font-weight-semibold">Trade only 1 pair</h2>
-							<p class="h6 font-weight-normal mb-5">ScalpHive are specialized in trading ETH/USD pair only, there're no intention to add new pair due to volume and stability.</p>
+							<p class="h6 font-weight-normal mb-5">ScalpHive are specialized in trading ETH/USD pair
+								only, there're no intention to add new pair due to volume and stability.</p>
 
 							<h2 class="mb-3 h4 font-weight-semibold">Choose your Exchange</h2>
 							<p class="h6 font-weight-normal">
-								ScalpHive currently support 3 exchanges, which is ByBit (Earn ETH, use ETH as collateral), BitMex (Earn BTC, use BTC as collateral), and Binance (Earn USDT, use USDT as collateral). Settlement assets are based on your exchange.
+								ScalpHive currently support 3 exchanges, which is ByBit (Earn ETH, use ETH as
+								collateral), BitMex (Earn BTC, use BTC as collateral), and Binance (Earn USDT, use USDT
+								as collateral). Settlement assets are based on your exchange.
 							</p>
 							<p class="h6 font-weight-normal">
-								<i>NOTE: Earning in ByBit use ETH as collateral, that being said, it carry assets risk.</i>
+								<i>NOTE: Earning in ByBit use ETH as collateral, that being said, it carry assets
+									risk.</i>
 							</p>
 						</div>
 					</div>
@@ -235,7 +317,9 @@
 									<i class="icon-et-gift h1 text-info"></i>
 									<h3 class="nott ls0">Refer a Friend & Get Rewarded.</h3>
 								</div>
-								<p class="font-weight-normal lead">Refer a friend and enjoy your rewards! You'll earn 5% on his next profit taking settlement, the more you refer, the more you earn! Just inform us before we sign up the user!</p>
+								<p class="font-weight-normal lead">Refer a friend and enjoy your rewards! You'll earn 5%
+									on his next profit taking settlement, the more you refer, the more you earn! Just
+									inform us before we sign up the user!</p>
 
 								<div class="clear"></div>
 							</div>
@@ -243,7 +327,8 @@
 					</div>
 				</div>
 
-				<div class="section m-0 parallax" id="faq" style="padding: 100px 0; background-color:rgb(255 211 76) !important;">
+				<div class="section m-0 parallax" id="faq"
+					style="padding: 100px 0; background-color:rgb(255 211 76) !important;">
 					<div class="container">
 						<!--<div class="row justify-content-between">
 							<div class="col-xl-4 col-lg-5 col-md-6 dark dotted-bg">
@@ -305,7 +390,8 @@
 												How do I join ScalpHive?
 											</div>
 										</div>
-										<div class="toggle-content">You can reach us at Telegram / Email to express your interest, we'll get back to you as soon as possible!</div>
+										<div class="toggle-content">You can reach us at Telegram / Email to express your
+											interest, we'll get back to you as soon as possible!</div>
 									</div>
 
 									<div class="toggle">
@@ -318,7 +404,9 @@
 												How much money can I make?
 											</div>
 										</div>
-										<div class="toggle-content">The expected ROI of the bot is at about 5~8%+ monthly, sometimes it might outperform due to high volatility that could yield higher ROI.</div>
+										<div class="toggle-content">The expected ROI of the bot is at about 5~8%+
+											monthly, sometimes it might outperform due to high volatility that could
+											yield higher ROI.</div>
 									</div>
 
 									<div class="toggle">
@@ -331,7 +419,8 @@
 												Is there a minimum to start?
 											</div>
 										</div>
-										<div class="toggle-content">The minimum to join is <b>$5,000 USD</b> worth of assets, there's no upper limit.</div>
+										<div class="toggle-content">The minimum to join is <b>$5,000 USD</b> worth of
+											assets, there's no upper limit.</div>
 									</div>
 
 									<div class="toggle">
@@ -344,7 +433,8 @@
 												How much % of profit do you charge in each cycle?
 											</div>
 										</div>
-										<div class="toggle-content">We charge 40% on your profit made from the bot.</div>
+										<div class="toggle-content">We charge 40% on your profit made from the bot.
+										</div>
 									</div>
 
 									<div class="toggle">
@@ -357,7 +447,8 @@
 												What is your billing cycle?
 											</div>
 										</div>
-										<div class="toggle-content">Billing is done manually, we usually bill monthly based on your start date.</div>
+										<div class="toggle-content">Billing is done manually, we usually bill monthly
+											based on your start date.</div>
 									</div>
 
 									<div class="toggle">
@@ -371,18 +462,25 @@
 											</div>
 										</div>
 										<div class="toggle-content">
-											Every investment carries a risk, ScalpHive try its best to minimize losses based on its built in risk management model, however, we can't guarantee that it will ALWAYS win. Investors will need to understand the possible risks as below:
-											<br/>
-											- Losses of trade<br/>
-											- Depreciation of assets<br/>
-											- Technical issues such as Exchange availability<br/>
-											- *Possible liquidation of account due to margin call<br/>
-											
+											Every investment carries a risk, ScalpHive try its best to minimize losses
+											based on its built in risk management model, however, we can't guarantee
+											that it will ALWAYS win. Investors will need to understand the possible
+											risks as below:
+											<br />
+											- Losses of trade<br />
+											- Depreciation of assets<br />
+											- Technical issues such as Exchange availability<br />
+											- *Possible liquidation of account due to margin call<br />
+
 											Investors should only invest money that you can afford to loss!
 										</div>
 									</div>
 								</div>
-								<h5 class="mt-4 text-center font-weight-normal text-black-50 mb-0">Didn't find what you were after? Contact us! <a href="https://t.me/scalphive" class="text-dark"><u>Telegram</u></a> or <a href="mailto:scalphive@gmail.com?subject=Enquiry about ScalpHive!" class="text-dark"><u>Email</u></a></h5>
+								<h5 class="mt-4 text-center font-weight-normal text-black-50 mb-0">Didn't find what you
+									were after? Contact us! <a href="https://t.me/scalphive"
+										class="text-dark"><u>Telegram</u></a> or <a
+										href="mailto:scalphive@gmail.com?subject=Enquiry about ScalpHive!"
+										class="text-dark"><u>Email</u></a></h5>
 							</div>
 						</div>
 					</div>
@@ -441,8 +539,12 @@
 						</div>
 
 						<div class="col-md-6 text-center text-md-right">
-							<a href="https://t.me/scalphive" target="_blank" class="btn text-dark bg-white rounded px-3 py-2 nott ls0 shadow-sm"><i class="icon-telegram mr-2"></i>Telegram</a>
-							<a href="mailto:scalphive@gmail.com?subject=Enquiry about ScalpHive!" class="btn text-dark  bg-white rounded px-3 py-2 nott ls0 shadow-sm ml-2"><i class="icon-email mr-2"></i>Email</a>
+							<a href="https://t.me/scalphive" target="_blank"
+								class="btn text-dark bg-white rounded px-3 py-2 nott ls0 shadow-sm"><i
+									class="icon-telegram mr-2"></i>Telegram</a>
+							<a href="mailto:scalphive@gmail.com?subject=Enquiry about ScalpHive!"
+								class="btn text-dark  bg-white rounded px-3 py-2 nott ls0 shadow-sm ml-2"><i
+									class="icon-email mr-2"></i>Email</a>
 						</div>
 					</div>
 
@@ -467,5 +569,624 @@
 	<script src="js/functions.js"></script>
 
 
+
+	<script>
+
+		var options = {
+			series: [{
+				name: 'candle',
+				data: [
+					{
+						x: new Date(1620701700000),
+						y: [4038.05, 4038.05, 4030.3, 4032.35]
+					}, {
+						x: new Date(1620701760000),
+						y: [4032.35, 4042, 4032.3, 4040.75]
+					}, {
+						x: new Date(1620701820000),
+						y: [4040.75, 4042, 4037.2, 4042]
+					}, {
+						x: new Date(1620701880000),
+						y: [4042, 4043, 4040.55, 4043]
+					}, {
+						x: new Date(1620701940000),
+						y: [4043, 4043, 4040.7, 4041.95]
+					}, {
+						x: new Date(1620702000000),
+						y: [4041.95, 4052.35, 4041.95, 4052]
+					}, {
+						x: new Date(1620702060000),
+						y: [4052, 4056.2, 4051.95, 4054.7]
+					}, {
+						x: new Date(1620702120000),
+						y: [4054.7, 4057.75, 4051.85, 4057.75]
+					}, {
+						x: new Date(1620702180000),
+						y: [4057.75, 4062.1, 4057.7, 4062.1]
+					}, {
+						x: new Date(1620702240000),
+						y: [4062.1, 4072, 4062.05, 4072]
+					}, {
+						x: new Date(1620702300000),
+						y: [4072, 4072.8, 4061.9, 4061.95]
+					}, {
+						x: new Date(1620702360000),
+						y: [4061.95, 4061.95, 4045.25, 4045.25]
+					}, {
+						x: new Date(1620702420000),
+						y: [4045.25, 4047.15, 4041.55, 4041.55]
+					}, {
+						x: new Date(1620702480000),
+						y: [4041.55, 4045.15, 4038.9, 4038.9]
+					}, {
+						x: new Date(1620702540000),
+						y: [4038.9, 4041.9, 4035, 4041.9]
+					}, {
+						x: new Date(1620702600000),
+						y: [4041.9, 4041.9, 4034.7, 4035.15]
+					}, {
+						x: new Date(1620702660000),
+						y: [4035.15, 4036.9, 4034.7, 4036.9]
+					}, {
+						x: new Date(1620702720000),
+						y: [4036.9, 4042.25, 4036.9, 4039.3]
+					}, {
+						x: new Date(1620702780000),
+						y: [4039.3, 4043.75, 4039.3, 4042.3]
+					}, {
+						x: new Date(1620702840000),
+						y: [4042.3, 4042.3, 4035.4, 4035.45]
+					}, {
+						x: new Date(1620702900000),
+						y: [4035.45, 4042.95, 4033.35, 4042.9]
+					}, {
+						x: new Date(1620702960000),
+						y: [4042.9, 4048.7, 4042.9, 4046.5]
+					}, {
+						x: new Date(1620703020000),
+						y: [4046.5, 4050.65, 4045.7, 4050.6]
+					}, {
+						x: new Date(1620703080000),
+						y: [4050.6, 4050.65, 4047.65, 4048.95]
+					}, {
+						x: new Date(1620703140000),
+						y: [4048.95, 4052.15, 4048.95, 4051.7]
+					}, {
+						x: new Date(1620703200000),
+						y: [4051.7, 4053.8, 4051.65, 4052.75]
+					}, {
+						x: new Date(1620703260000),
+						y: [4052.75, 4055, 4048.15, 4048.15]
+					}, {
+						x: new Date(1620703320000),
+						y: [4048.15, 4053, 4044.7, 4053]
+					}, {
+						x: new Date(1620703380000),
+						y: [4053, 4057.8, 4053, 4054.85]
+					}, {
+						x: new Date(1620703440000),
+						y: [4054.85, 4057.7, 4054.85, 4057.7]
+					}, {
+						x: new Date(1620703500000),
+						y: [4057.7, 4057.7, 4053, 4054.3]
+					}, {
+						x: new Date(1620703560000),
+						y: [4054.3, 4054.35, 4050, 4050.1]
+					}, {
+						x: new Date(1620703620000),
+						y: [4050.1, 4054.4, 4050.05, 4053.6]
+					}, {
+						x: new Date(1620703680000),
+						y: [4053.6, 4053.6, 4050.1, 4050.45]
+					}, {
+						x: new Date(1620703740000),
+						y: [4050.45, 4052.9, 4050.45, 4052.55]
+					}, {
+						x: new Date(1620703800000),
+						y: [4052.55, 4052.55, 4036.45, 4038.75]
+					}, {
+						x: new Date(1620703860000),
+						y: [4038.75, 4038.8, 4034.15, 4035.4]
+					}, {
+						x: new Date(1620703920000),
+						y: [4035.4, 4040.25, 4035.35, 4040.25]
+					}, {
+						x: new Date(1620703980000),
+						y: [4040.25, 4040.25, 4031.4, 4031.45]
+					}, {
+						x: new Date(1620704040000),
+						y: [4031.45, 4032.65, 4031, 4031.05]
+					}, {
+						x: new Date(1620704100000),
+						y: [4031.05, 4031.05, 4021.4, 4024.7]
+					}, {
+						x: new Date(1620704160000),
+						y: [4024.7, 4024.7, 4021.8, 4023.4]
+					}, {
+						x: new Date(1620704220000),
+						y: [4023.4, 4024.05, 4023.35, 4024.05]
+					}, {
+						x: new Date(1620704280000),
+						y: [4024.05, 4028.7, 4023, 4023.05]
+					}, {
+						x: new Date(1620704340000),
+						y: [4023.05, 4023.05, 4013.7, 4018.15]
+					}, {
+						x: new Date(1620704400000),
+						y: [4018.15, 4020, 4018.1, 4018.1]
+					}, {
+						x: new Date(1620704460000),
+						y: [4018.1, 4022.15, 4018.1, 4019.55]
+					}, {
+						x: new Date(1620704520000),
+						y: [4019.55, 4019.55, 4004, 4006.55]
+					}, {
+						x: new Date(1620704580000),
+						y: [4006.55, 4011.85, 3990.65, 3991]
+					}, {
+						x: new Date(1620704640000),
+						y: [3991, 3997.7, 3990.95, 3997.05]
+					}, {
+						x: new Date(1620704700000),
+						y: [3997.05, 4004.7, 3992.5, 3992.55]
+					}, {
+						x: new Date(1620704760000),
+						y: [3992.55, 3992.55, 3981.55, 3982.5]
+					}, {
+						x: new Date(1620704820000),
+						y: [3982.5, 3984.25, 3977, 3979.1]
+					}, {
+						x: new Date(1620704880000),
+						y: [3979.1, 3989.3, 3979.1, 3987.3]
+					}, {
+						x: new Date(1620704940000),
+						y: [3987.3, 3993.55, 3987.25, 3990.9]
+					}, {
+						x: new Date(1620705000000),
+						y: [3990.9, 3999.85, 3990.85, 3999.85]
+					}, {
+						x: new Date(1620705060000),
+						y: [3999.85, 3999.85, 3991.3, 3995.2]
+					}, {
+						x: new Date(1620705120000),
+						y: [3995.2, 3995.25, 3987.5, 3987.75]
+					}, {
+						x: new Date(1620705180000),
+						y: [3987.75, 3993.55, 3987.4, 3987.45]
+					}, {
+						x: new Date(1620705240000),
+						y: [3987.45, 3989.3, 3975.05, 3977.95]
+					}, {
+						x: new Date(1620705300000),
+						y: [3977.95, 3984.5, 3977.95, 3984.35]
+					}, {
+						x: new Date(1620705360000),
+						y: [3984.35, 3984.65, 3972.35, 3980.45]
+					}, {
+						x: new Date(1620705420000),
+						y: [3980.45, 3982.95, 3966.6, 3968.95]
+					}, {
+						x: new Date(1620705480000),
+						y: [3968.95, 3971.3, 3962.25, 3967.8]
+					}, {
+						x: new Date(1620705540000),
+						y: [3967.8, 3974.5, 3966.85, 3973.3]
+					}, {
+						x: new Date(1620705600000),
+						y: [3973.3, 3977, 3973.25, 3974.45]
+					}, {
+						x: new Date(1620705660000),
+						y: [3974.45, 3974.45, 3946.1, 3946.15]
+					}, {
+						x: new Date(1620705720000),
+						y: [3946.15, 3954.5, 3942.9, 3949.1]
+					}, {
+						x: new Date(1620705780000),
+						y: [3949.1, 3962.9, 3949.1, 3958.15]
+					}, {
+						x: new Date(1620705840000),
+						y: [3958.15, 3965.6, 3958.15, 3961.35]
+					}, {
+						x: new Date(1620705900000),
+						y: [3961.35, 3967.55, 3960.85, 3961.1]
+					}, {
+						x: new Date(1620705960000),
+						y: [3961.1, 3969.95, 3961.1, 3969.95]
+					}, {
+						x: new Date(1620706020000),
+						y: [3969.95, 3982.1, 3969.05, 3982.05]
+					}, {
+						x: new Date(1620706080000),
+						y: [3982.05, 3982.1, 3974.05, 3981.15]
+					}, {
+						x: new Date(1620706140000),
+						y: [3981.15, 3982.85, 3981.15, 3982.55]
+					}, {
+						x: new Date(1620706200000),
+						y: [3982.55, 3982.55, 3977.05, 3977.65]
+					}, {
+						x: new Date(1620706260000),
+						y: [3977.65, 3977.7, 3971.4, 3972.45]
+					}, {
+						x: new Date(1620706320000),
+						y: [3972.45, 3982.2, 3972.45, 3976]
+					}, {
+						x: new Date(1620706380000),
+						y: [3976, 3977, 3965.55, 3965.55]
+					}, {
+						x: new Date(1620706440000),
+						y: [3965.55, 3972.5, 3965.55, 3970.65]
+					}, {
+						x: new Date(1620706500000),
+						y: [3970.65, 3971.65, 3964.25, 3964.25]
+					}, {
+						x: new Date(1620706560000),
+						y: [3964.25, 3964.3, 3961.55, 3963.8]
+					}, {
+						x: new Date(1620706620000),
+						y: [3963.8, 3967.35, 3963.8, 3964.15]
+					}, {
+						x: new Date(1620706680000),
+						y: [3964.15, 3964.2, 3948.05, 3948.05]
+					}, {
+						x: new Date(1620706740000),
+						y: [3948.05, 3961.3, 3946.65, 3957.9]
+					}, {
+						x: new Date(1620706800000),
+						y: [3957.9, 3958.9, 3933.65, 3936.55]
+					}, {
+						x: new Date(1620706860000),
+						y: [3936.55, 3943.85, 3935.3, 3937.4]
+					}, {
+						x: new Date(1620706920000),
+						y: [3937.4, 3949.65, 3937.4, 3949.65]
+					}, {
+						x: new Date(1620706980000),
+						y: [3949.65, 3956.35, 3942.8, 3942.8]
+					}, {
+						x: new Date(1620707040000),
+						y: [3942.8, 3942.95, 3925, 3932]
+					}, {
+						x: new Date(1620707100000),
+						y: [3932, 3933.1, 3925, 3933.1]
+					}, {
+						x: new Date(1620707160000),
+						y: [3933.1, 3942.05, 3923.3, 3925.1]
+					}, {
+						x: new Date(1620707220000),
+						y: [3925.1, 3927.8, 3920, 3923.65]
+					}, {
+						x: new Date(1620707280000),
+						y: [3923.65, 3932.65, 3923.65, 3929]
+					}, {
+						x: new Date(1620707340000),
+						y: [3929, 3929, 3917.55, 3920.1]
+					}, {
+						x: new Date(1620707400000),
+						y: [3920.1, 3934.1, 3920.05, 3929.55]
+					}, {
+						x: new Date(1620707460000),
+						y: [3929.55, 3930.8, 3920.5, 3920.5]
+					}, {
+						x: new Date(1620707520000),
+						y: [3920.5, 3920.5, 3909.1, 3918.35]
+					}, {
+						x: new Date(1620707580000),
+						y: [3918.35, 3936.8, 3918.35, 3936]
+					}, {
+						x: new Date(1620707640000),
+						y: [3936, 3941.95, 3935.95, 3937.6]
+					}, {
+						x: new Date(1620707700000),
+						y: [3937.6, 3946.05, 3937.6, 3941.4]
+					}, {
+						x: new Date(1620707760000),
+						y: [3941.4, 3943.1, 3935.3, 3941]
+					}, {
+						x: new Date(1620707820000),
+						y: [3941, 3941, 3925.45, 3925.45]
+					}, {
+						x: new Date(1620707880000),
+						y: [3925.45, 3932.95, 3925.45, 3928.6]
+					}, {
+						x: new Date(1620707940000),
+						y: [3928.6, 3933.85, 3928.3, 3928.45]
+					}, {
+						x: new Date(1620708000000),
+						y: [3928.45, 3935.3, 3926.7, 3935.3]
+					}, {
+						x: new Date(1620708060000),
+						y: [3935.3, 3937.4, 3932.15, 3937.35]
+					}, {
+						x: new Date(1620708120000),
+						y: [3937.35, 3937.4, 3921.2, 3923.3]
+					}, {
+						x: new Date(1620708180000),
+						y: [3923.3, 3931.45, 3917.5, 3931.45]
+					}, {
+						x: new Date(1620708240000),
+						y: [3931.45, 3938.85, 3931.45, 3932.8]
+					}, {
+						x: new Date(1620708300000),
+						y: [3932.8, 3951.65, 3932.75, 3951.65]
+					}, {
+						x: new Date(1620708360000),
+						y: [3951.65, 3954.4, 3951.6, 3954.35]
+					}, {
+						x: new Date(1620708420000),
+						y: [3954.35, 3961.5, 3954.35, 3961.5]
+					}, {
+						x: new Date(1620708480000),
+						y: [3961.5, 3961.5, 3951.4, 3951.4]
+					}, {
+						x: new Date(1620708540000),
+						y: [3951.4, 3956.55, 3950, 3953.15]
+					}, {
+						x: new Date(1620708600000),
+						y: [3953.15, 3960.1, 3953.1, 3960.1]
+					}, {
+						x: new Date(1620708660000),
+						y: [3960.1, 3963.15, 3960.1, 3961.55]
+					}, {
+						x: new Date(1620708720000),
+						y: [3961.55, 3961.6, 3954.1, 3958.65]
+					}, {
+						x: new Date(1620708780000),
+						y: [3958.65, 3965.85, 3958.65, 3965.85]
+					}, {
+						x: new Date(1620708840000),
+						y: [3965.85, 3965.85, 3962.05, 3964.25]
+					}, {
+						x: new Date(1620708900000),
+						y: [3964.25, 3971.4, 3964.25, 3971.4]
+					}, {
+						x: new Date(1620708960000),
+						y: [3971.4, 3973.4, 3970.15, 3973.4]
+					}, {
+						x: new Date(1620709020000),
+						y: [3973.4, 3973.45, 3968.3, 3968.35]
+					}, {
+						x: new Date(1620709080000),
+						y: [3968.35, 3970.35, 3968.05, 3968.05]
+					}, {
+						x: new Date(1620709140000),
+						y: [3968.05, 3971.3, 3968.05, 3971.3]
+					}, {
+						x: new Date(1620709200000),
+						y: [3971.3, 3980, 3971.25, 3980]
+					}, {
+						x: new Date(1620709260000),
+						y: [3980, 3983.35, 3979.95, 3980.35]
+					}, {
+						x: new Date(1620709320000),
+						y: [3980.35, 3983.35, 3979.45, 3983.35]
+					}, {
+						x: new Date(1620709380000),
+						y: [3983.35, 3990.05, 3983.35, 3990.05]
+					}, {
+						x: new Date(1620709440000),
+						y: [3990.05, 3991.45, 3985, 3991.45]
+					}, {
+						x: new Date(1620709500000),
+						y: [3991.45, 3995.2, 3988.85, 3988.9]
+					}, {
+						x: new Date(1620709560000),
+						y: [3988.9, 3992.95, 3987.75, 3989.15]
+					}, {
+						x: new Date(1620709620000),
+						y: [3989.15, 3989.2, 3980.45, 3982.3]
+					}, {
+						x: new Date(1620709680000),
+						y: [3982.3, 3982.35, 3967, 3969.95]
+					}, {
+						x: new Date(1620709740000),
+						y: [3969.95, 3973.8, 3967.15, 3973.6]
+					}, {
+						x: new Date(1620709800000),
+						y: [3973.6, 3973.65, 3962.45, 3962.45]
+					}, {
+						x: new Date(1620709860000),
+						y: [3962.45, 3962.5, 3948.45, 3955.45]
+					}, {
+						x: new Date(1620709920000),
+						y: [3955.45, 3955.5, 3945.95, 3946]
+					}, {
+						x: new Date(1620709980000),
+						y: [3946, 3949.35, 3946, 3948.15]
+					}, {
+						x: new Date(1620710040000),
+						y: [3948.15, 3948.15, 3940.8, 3941.35]
+					}, {
+						x: new Date(1620710100000),
+						y: [3941.35, 3950.6, 3941.35, 3950.6]
+					}, {
+						x: new Date(1620710160000),
+						y: [3950.6, 3963.85, 3950.6, 3962.25]
+					}, {
+						x: new Date(1620710220000),
+						y: [3962.25, 3962.3, 3949.4, 3961.7]
+					}, {
+						x: new Date(1620710280000),
+						y: [3961.7, 3968.5, 3957.85, 3960.75]
+					}, {
+						x: new Date(1620710340000),
+						y: [3960.75, 3960.8, 3944.65, 3945.25]
+					}, {
+						x: new Date(1620710400000),
+						y: [3945.25, 3945.25, 3922.9, 3927.8]
+					}, {
+						x: new Date(1620710460000),
+						y: [3927.8, 3934, 3923.4, 3923.55]
+					}, {
+						x: new Date(1620710520000),
+						y: [3923.55, 3924.3, 3905.2, 3913.8]
+					}, {
+						x: new Date(1620710580000),
+						y: [3913.8, 3921.55, 3913.8, 3920.05]
+					}, {
+						x: new Date(1620710640000),
+						y: [3920.05, 3920.05, 3913.15, 3916.7]
+					}, {
+						x: new Date(1620710700000),
+						y: [3916.7, 3920.85, 3915.7, 3920.7]
+					}, {
+						x: new Date(1620710760000),
+						y: [3920.7, 3920.8, 3915.45, 3916.5]
+					}, {
+						x: new Date(1620710820000),
+						y: [3916.5, 3917.4, 3914, 3917.3]
+					}, {
+						x: new Date(1620710880000),
+						y: [3917.3, 3917.3, 3910.6, 3910.7]
+					}
+				]
+			}],
+			chart: {
+				height: 500,
+				type: 'candlestick',
+			},
+			title: {
+				text: 'ScalpHive Bot Entry & Exit',
+				align: 'left'
+			},
+			annotations: {
+				xaxis: [
+					{
+						x: 'May 11 11:26',
+						borderColor: '#00E396',
+						label: {
+							borderColor: '#00E396',
+							style: {
+								fontSize: '12px',
+								color: '#fff',
+								background: '#00E396'
+							},
+							orientation: 'horizontal',
+							offsetY: 7,
+							text: 'OPEN'
+						}
+					},
+					{
+						x: 'May 11 12:56',
+						borderColor: '#FF4560',
+						label: {
+							borderColor: '#FF4560',
+							style: {
+								fontSize: '12px',
+								color: '#fff',
+								background: '#FF4560'
+							},
+							orientation: 'horizontal',
+							offsetY: 7,
+							text: 'CLOSE'
+						}
+					}
+				],
+				points:
+					[
+						{
+							x: 'May 11 11:26',
+							y: 4056.35,
+							marker: {
+								size: 4,
+							},
+							label: {
+								borderColor: '#00E396',
+								text: 'BUY'
+							}
+						},
+						{
+							x: 'May 11 11:31',
+							y: 4043.95,
+							marker: {
+								size: 4,
+							},
+							label: {
+								borderColor: '#00E396',
+								text: 'BUY'
+							}
+						},
+						{
+							x: 'May 11 11:36',
+							y: 4024.2,
+							marker: {
+								size: 4,
+							},
+							label: {
+								borderColor: '#00E396',
+								text: 'BUY'
+							}
+						},
+						{
+							x: 'May 11 11:44',
+							y: 3998.95,
+							marker: {
+								size: 4,
+							},
+							label: {
+								borderColor: '#00E396',
+								text: 'BUY'
+							}
+						},
+						{
+							x: 'May 11 11:58',
+							y: 3966.6,
+							marker: {
+								size: 4,
+							},
+							label: {
+								borderColor: '#00E396',
+								text: 'BUY'
+							}
+						},
+						{
+							x: 'May 11 12:25',
+							y: 3925.15,
+							marker: {
+								size: 4,
+							},
+							label: {
+								borderColor: '#00E396',
+								text: 'BUY'
+							}
+						},
+						{
+							x: 'May 11 12:56',
+							y: 3967.45,
+							marker: {
+								size: 4,
+							},
+							label: {
+								borderColor: '#FF4560',
+								text: 'SELL'
+							}
+						}
+					]
+			},
+			tooltip: {
+				enabled: true,
+			},
+			xaxis: {
+				type: 'category',
+				labels: {
+					formatter: function (val) {
+						console.log(val);
+						return dayjs(val).format('MMM DD HH:mm')
+					}
+				}
+			},
+			yaxis: {
+				tooltip: {
+					enabled: true
+				}
+			}
+		};
+
+		var chart = new ApexCharts(document.querySelector("#chart"), options);
+		chart.render();
+
+
+	</script>
 </body>
+
 </html>
